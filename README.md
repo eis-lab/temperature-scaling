@@ -146,9 +146,9 @@ Below are the main arguments defined in `utils.parse_args()`:
 
 During local training, the model applies:
 
-[
-\text{softmax}\left(\frac{z}{T}\right)
-]
+
+$\text{softmax}\left(\frac{z}{T}\right)$
+
 
 Effects:
 
