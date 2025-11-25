@@ -9,9 +9,7 @@ This repository provides a clean PyTorch implementation of **temperature scaling
 Federated Learning often suffers from slow or unstable convergence under **non-iid client data**.  
 This project modifies the **local training objective** by scaling logits before softmax + cross-entropy:
 
-\[
-\tilde{z} = \frac{z}{T}
-\]
+$\tilde{z} = \frac{z}{T}$
 
 - **T < 1** → amplified logits → more confident gradients → faster convergence  
 - **T > 1** → flattened logits → more conservative training  
